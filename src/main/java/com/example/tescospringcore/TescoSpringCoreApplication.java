@@ -13,6 +13,7 @@ public class TescoSpringCoreApplication {
 
 		//ApplicationContext ctx = new ClassPathXmlApplicationContext("/beans.xml");
 		ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("/beans.xml");
+		System.out.println("Hellow Jenkins");
 		BankingService bs = (BankingService)ctx.getBean("service");
 		System.out.println("HashCode 1 "+bs.hashCode());
 		BankingService bs1 = (BankingService)ctx.getBean("service");
